@@ -12,7 +12,8 @@ function TodoCtrl($scope){
 		var count=0;
 		angular.forEach($scope.todos,function(todo){
 			count+=todo.done?0:1;
-		)};
+		});
+		return count;
 	};
 	
 	$scope.archive=function(){
